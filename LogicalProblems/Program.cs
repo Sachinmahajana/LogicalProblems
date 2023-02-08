@@ -12,7 +12,7 @@ namespace LogicalProblems
         {
             
             Console.WriteLine("Welcome to the Logical Programs");
-            Console.WriteLine("\n1.Primenumber\n2.Fibonacci");
+            Console.WriteLine("\n1.Primenumber\n2.Fibonacci\n3.ReverseNumber");
             int option = Convert.ToInt32(Console.ReadLine());
 
             switch (option)
@@ -26,6 +26,11 @@ namespace LogicalProblems
                 case 2:
                     Fibonacciseries myObj2 = new Fibonacciseries();
                     myObj2.FindFibonacci();
+                    break;
+                // Q3 Reverse Number
+                case 3:
+                    ReverseNumber myObj3 = new ReverseNumber();
+                    myObj3.FindReversnumber();
                     break;
             }
         
