@@ -13,6 +13,7 @@ namespace LogicalProblems
             
             Console.WriteLine("Welcome to the Logical Programs");
             Console.WriteLine("\n1.Primenumber\n2.Fibonacci\n3.ReverseNumber\n4.PerfectNumber\n5.CouponNumber\n6.DayOfWeek");
+            Console.WriteLine("\n7.MonthlyPayment");
             int option = Convert.ToInt32(Console.ReadLine());
 
             switch (option)
@@ -45,6 +46,10 @@ namespace LogicalProblems
                 case 6:
                     DayOfWeek myObj6 = new DayOfWeek();
                     myObj6.DayOfWeekFun();
+                    break;
+                case 7:
+                    MonthlyPayment myObj7 = new MonthlyPayment();
+                    myObj7.MonthlyPaymentFun();
                     break;
             }
         
