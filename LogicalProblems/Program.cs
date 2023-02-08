@@ -12,7 +12,7 @@ namespace LogicalProblems
         {
             
             Console.WriteLine("Welcome to the Logical Programs");
-            Console.WriteLine("\n1.Primenumber\n2.Fibonacci\n3.ReverseNumber\n4.PerfectNumber");
+            Console.WriteLine("\n1.Primenumber\n2.Fibonacci\n3.ReverseNumber\n4.PerfectNumber\n5.CouponNumber");
             int option = Convert.ToInt32(Console.ReadLine());
 
             switch (option)
@@ -32,9 +32,15 @@ namespace LogicalProblems
                     ReverseNumber myObj3 = new ReverseNumber();
                     myObj3.FindReversnumber();
                     break;
+                // Q4 PerfectNumber
                 case 4:
                     PerfectNumber myObj4 = new PerfectNumber();
                     myObj4.FindPerfectNumber();
+                    break;
+                // Q5 CouponNumber
+                case 5:
+                    Couponnumber myObj5 = new Couponnumber();
+                    myObj5.CouponNumberGet();
                     break;
             }
         
